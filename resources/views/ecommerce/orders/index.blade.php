@@ -1,7 +1,7 @@
 @extends('layouts.ecommerce')
 
 @section('title')
-    <title>List Pesanan - DW Ecommerce</title>
+    <title>List Pesanan </title>
 @endsection
 
 @section('content')
@@ -59,7 +59,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                @forelse ($orders as $row) 
+                                                @forelse ($orders as $row)
                                                 <tr>
                                                     <td>
                                                         <strong>{{ $row->invoice }}</strong><br>
@@ -73,14 +73,14 @@
                                                     <td>{!! $row->status_label !!}</td>
                                                     <td>{{ $row->created_at }}</td>
                                                     <td>
-                                                        <form action="{{ route('customer.order_accept') }}" 
+                                                        <form action="{{ route('customer.order_accept') }}"
                                                             class="form-inline"
                                                             onsubmit="return confirm('Kamu Yakin?');" method="post">
                                                             @csrf
 
                                                             <a href="{{ route('customer.view_order', $row->invoice) }}" class="btn btn-primary btn-sm mr-1">Detail</a>
                                                             <input type="hidden" name="order_id" value="{{ $row->id }}">
-                                                            
+
                                                             @if ($row->status == 3 && $row->return_count == 0)
                                                                 <button class="btn btn-success btn-sm">Terima</button>
                                                                 <a href="{{ route('customer.order_return', $row->invoice) }}" class="btn btn-danger btn-sm mt-1">Return</a>

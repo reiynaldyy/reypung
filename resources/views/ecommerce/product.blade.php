@@ -1,7 +1,7 @@
 @extends('layouts.ecommerce')
 
 @section('title')
-    <title>Jual Produk Fashion - DW Ecommerce</title>
+    <title>Jual Produk</title>
 @endsection
 
 @section('content')
@@ -79,7 +79,7 @@
                                     @foreach ($categories as $category)
                                     <li>
                                         <strong><a href="{{ url('/category/' . $category->slug) }}">{{ $category->name }}</a></strong>
-                                        
+
                                         @foreach ($category->child as $child)
                                         <ul class="list" style="display: block">
                                             <li>

@@ -1,7 +1,7 @@
 @extends('layouts.ecommerce')
 
 @section('title')
-    <title>Checkout - Dw Ecommerce</title>
+    <title>Checkout</title>
 @endsection
 
 @section('content')
@@ -29,11 +29,11 @@
 				<div class="row">
 					<div class="col-lg-8">
                         <h3>Informasi Pengiriman</h3>
-                        
+
                         @if (session('error'))
                             <div class="alert alert-danger">{{ session('error') }}</div>
                         @endif
-                        
+
                         <form class="row contact_form" action="{{ route('front.store_checkout') }}" method="post" novalidate="novalidate">
                             @csrf
                         <div class="col-md-12 form-group p_star">
@@ -49,8 +49,8 @@
                         <div class="col-md-6 form-group p_star">
                             <label for="">Email</label>
                             @if (auth()->guard('customer')->check())
-                            <input type="email" class="form-control" id="email" name="email" 
-                                value="{{ auth()->guard('customer')->user()->email }}" 
+                            <input type="email" class="form-control" id="email" name="email"
+                                value="{{ auth()->guard('customer')->user()->email }}"
                                 required {{ auth()->guard('customer')->check() ? 'readonly':'' }}>
                             @else
                             <input type="email" class="form-control" id="email" name="email"
@@ -87,7 +87,7 @@
                             </select>
                             <p class="text-danger">{{ $errors->first('district_id') }}</p>
                         </div>
-                    
+
 					</div>
 					<div class="col-lg-4">
 						<div class="order_box">
@@ -143,7 +143,7 @@
                 type: "GET",
                 data: { province_id: $(this).val() },
                 success: function(html){
-                    
+
                     $('#city_id').empty()
                     $('#city_id').append('<option value="">Pilih Kabupaten/Kota</option>')
                     $.each(html.data, function(key, item) {

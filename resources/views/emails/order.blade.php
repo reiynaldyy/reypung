@@ -7,7 +7,7 @@
     <title>Pesanan Anda Dikirim {{ $order->invoice }}</title>
 </head>
 <body>
-    <h2>Hai, {{ $order->customer->name }}</h2>
+    <h2>Hai gais, {{ $order->customer->name }}</h2>
     <p>Terima kasih telah melakukan transaksi pada aplikasi kami, berikut nomor resi dari pesanan anda: <strong>{{ $order->tracking_number }}</strong></p>
 </body>
 </html>

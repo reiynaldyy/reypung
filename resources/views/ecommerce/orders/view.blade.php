@@ -1,7 +1,7 @@
 @extends('layouts.ecommerce')
 
 @section('title')
-    <title>Order {{ $order->invoice }} - DW Ecommerce</title>
+    <title>Order {{ $order->invoice }} Papung</title>
 @endsection
 
 @section('content')
@@ -66,7 +66,7 @@
                                 <div class="card-header">
                                     <h4 class="card-title">
                                         Pembayaran
-                                        
+
                                         @if ($order->status == 0)
                                         <a href="{{ url('member/payment?invoice=' . $order->invoice) }}" class="btn btn-primary btn-sm float-right">Konfirmasi</a>
                                         @endif

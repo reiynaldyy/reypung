@@ -1,7 +1,7 @@
 @extends('layouts.ecommerce')
 
 @section('title')
-    <title>Daftar Komisi - DW Ecommerce</title>
+    <title>Daftar Komisi</title>
 @endsection
 
 @section('content')
@@ -57,7 +57,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                @forelse ($orders as $row) 
+                                                @forelse ($orders as $row)
                                                 <tr>
                                                     <td>
                                                         <strong>{{ $row->invoice }}</strong><br>

@@ -77,11 +77,6 @@
 							<div class="col-lg-5">
 								<ul class="nav navbar-nav navbar-right right_nav pull-right">
 									<hr>
-									<li class="nav-item">
-										<a href="#" class="icons">
-											<i class="fa fa-search" aria-hidden="true"></i>
-										</a>
-									</li>
 									<hr>
 									<li class="nav-item">
 										<a href="#" class="icons">
@@ -89,11 +84,6 @@
 										</a>
 									</li>
 									<hr>
-									<li class="nav-item">
-										<a href="#" class="icons">
-											<i class="fa fa-heart-o" aria-hidden="true"></i>
-										</a>
-									</li>
 									<hr>
 									<li class="nav-item">
 										<a href="{{ route('front.list_cart') }}" class="icons">

@@ -13,8 +13,8 @@
 				<div class="banner_content row">
 					<div class="offset-lg-2 col-lg-8">
 						<h3>Hoodie
-							<br />Keluaran Baru</h3>
-						<a class="white_bg_btn" href="#">Lihat Koleksi</a>
+							<br />Trend 2020</h3>
+						<a class="white_bg_btn" href="product">Lihat Koleksi</a>
 					</div>
 				</div>
 			</div>
@@ -30,8 +30,8 @@
 					<div class="hot_deal_box">
 						<img class="img-fluid" src="{{ asset('ecommerce/img/product/hot_deals/h1.jpg') }}" alt="">
 						<div class="content">
-							<h2>Hot Deals of this Month</h2>
-							<p>shop now</p>
+							<h2>Keluaran Terbaru</h2>
+							<a class="white_bg_btn" href="product">Belanja sekarang</a>
 						</div>
 						<a class="hot_deal_link" href="#"></a>
 					</div>
@@ -41,8 +41,8 @@
 					<div class="hot_deal_box">
 						<img class="img-fluid" src="{{ asset('ecommerce/img/product/hot_deals/h1.jpg') }}" alt="">
 						<div class="content">
-							<h2>Hot Deals of this Month</h2>
-							<p>shop now</p>
+							<h2>Keluaran Terbaru</h2>
+							<a class="white_bg_btn" href="product">Belanja sekarang</a>
 						</div>
 						<a class="hot_deal_link" href="#"></a>
 					</div>
